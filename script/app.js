@@ -2,7 +2,7 @@
 
 $(".kittylist").children("li").children("img").on("click", function(e){
     var catSays = $(this).attr("alt");
-    var catUrl = $(this).attr("src")
+    var catUrl = $(this).attr("src");
     // console.log("clicked this cat", catSays, catUrl);
     $(".overlay").children("img").attr("src",catUrl);
     $(".overlay").children(".image-caption").text(catSays);
