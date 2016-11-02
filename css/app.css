@@ -1,1 +1,44 @@
-/* Write your code here */
+
+.announcement{
+    padding:2em;
+    background-color: blue;
+    border-style: groove;
+    position:relative;
+}
+
+.closebutton {
+    border: 0;
+    background-color: blue;
+    color: white;
+    font-weight: 800;
+    position:absolute;
+    right:1.2em;
+    top:1.2em;
+}
+
+.hide{
+    padding:1.5em;
+}
+
+.hide p {
+    display: none;
+}
+
+.hide .closebutton{
+    display:none;
+}
+
+.hide .showButton{
+    display:block;
+}
+
+.showButton{
+    border: 0;
+    background-color: blue;
+    color: white;
+    font-weight: 800;
+    position:absolute;
+    right:1.2em;
+    top:1.2em;
+    display:none;
+}
