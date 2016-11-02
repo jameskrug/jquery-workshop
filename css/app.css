@@ -1,1 +1,65 @@
-/* Write your code here */
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+.mainpage{
+    max-width: 1000px;
+    /*display: flex; */
+    background-color: #9c7878;
+}
+
+
+
+
+.signup{
+    /*width: 30%;*/
+    width:100%;
+    padding-bottom: 2em;
+    border-style: groove;
+    margin-right: 1.5em;
+    background-color: #481818;
+}
+
+.signup form{
+    margin: .5vw;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.signup h2{
+    color:#d0a8a8;
+}
+
+.theinputter{
+    max-width: 100%;
+    margin-bottom: .5em;
+    width:90%;
+}
+
+button{
+    background-color: green;
+    color:white;
+    width:90%;
+}
+
+.paragraphs{
+    margin-right: 1em;
+    width: 70%;
+    width:100%;
+    
+}
+
+@media only screen and (min-width: 641px) {
+    .mainpage{
+        display: flex;
+    }
+    .signup{
+        width:30%;
+    }
+    .paragraphs{
+        width: 70%;
+    }
+}
