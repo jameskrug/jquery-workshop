@@ -1,0 +1,68 @@
+
+.block-grid li {
+  margin:2;
+  padding: 2px; /* Adding a 10px padding on a 100% width would not work if it wasn't for box-sizing: border-box! */
+}
+
+
+.row {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex; 
+    flex-wrap: wrap;
+}
+
+
+
+.block-grid-small-2 li{
+  width: 50%;
+}
+.block-grid-small-3 li{
+  width: 33.333%;
+}
+.block-grid-small-4 li{
+  width: 25%;
+}
+.block-grid-small-5 li{
+  width: 20%;
+}
+.block-grid-small-6 li{
+  width: 16.666%;
+}
+
+@media only screen and (min-width: 641px){
+    .block-grid-medium-2 li{
+      width: 50%;
+    }
+    .block-grid-medium-3 li{
+      width: 33.333%;
+    }
+    .block-grid-medium-4 li{
+      width: 25%;
+    }
+    .block-grid-medium-5 li{
+      width: 20%;
+    }
+    .block-grid-medium-6 li{
+      width: 16.666%;
+    }
+}
+
+
+@media only screen and (min-width: 1025px){
+    .block-grid-large-2 li{
+      width: 50%;
+    }
+    .block-grid-large-3 li{
+      width: 33.333%;
+    }
+    .block-grid-large-4 li{
+      width: 25%;
+    }
+    .block-grid-large-5 li{
+      width: 20%;
+    }
+    .block-grid-large-6 li{
+      width: 16.666%;
+    }
+}
