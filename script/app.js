@@ -1,5 +1,5 @@
 
-var intervalID = window.setInterval(myCallback, 8000);
+var intervalID = window.setInterval(myCallback, 3000);
 
 jQuery.getJSON('https://api.wheretheiss.at/v1/satellites/25544')
     .then(function(res) {
@@ -14,7 +14,7 @@ function myCallback() {
     jQuery.getJSON('https://api.wheretheiss.at/v1/satellites/25544')
     .then(function(res) {
         $(".location").text("this is where the iss is: " + res.latitude + " : " + res.longitude);
-        var mapHere = "<img class = 'mapimage' src = 'https://maps.googleapis.com/maps/api/staticmap?center="+res.latitude+","+res.longitude+"&zoom=8&size=640x640&markers=color:red%7Clabel:J%7C"+res.latitude+","+res.longitude+"&key=AIzaSyD1iWqFKtyklWjC2DCHB0si1UIkeDgdO0E'>";
+        var mapHere = "https://maps.googleapis.com/maps/api/staticmap?center="+res.latitude+","+res.longitude+"&zoom=5&size=640x640&&markers=color:red%7Clabel:J%7C"+res.latitude+","+res.longitude+"&key=AIzaSyD1iWqFKtyklWjC2DCHB0si1UIkeDgdO0E";
         console.log("themap", mapHere);
         $("img").attr("src", mapHere);
     }
