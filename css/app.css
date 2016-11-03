@@ -4,12 +4,9 @@
     border-style: dashed;
 }
 
-.whynotiss{
-    font-size: 0.6em;
-    background-color: yellow; 
-}
-
 .mapimage{
     width:100%;
+    max-width: 800px;
+    margin: auto 0;
     padding:2em 0;
 }

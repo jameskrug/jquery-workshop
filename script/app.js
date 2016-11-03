@@ -5,9 +5,8 @@ jQuery.getJSON('https://api.wheretheiss.at/v1/satellites/25544')
     .then(function(res) {
         console.log(res);
         $("h1").after('<div class = "location">this is where the iss is: ' + res.latitude + " : " + res.longitude + "</div>")
-        $(".location").after("<div class = 'whynotiss'>this is actually the location of syndey, the iss api was down at the time of coding</div>")
         var mapHere = "<img class = 'mapimage' src = https://maps.googleapis.com/maps/api/staticmap?center="+res.latitude+","+res.longitude+"&zoom=5&size=640x640&&markers=color:red%7Clabel:J%7C"+res.latitude+","+res.longitude+"&key=AIzaSyD1iWqFKtyklWjC2DCHB0si1UIkeDgdO0E>";
-        $(".whynotiss").after(mapHere);
+        $(".location").after(mapHere);
 });
 
 function myCallback() {
